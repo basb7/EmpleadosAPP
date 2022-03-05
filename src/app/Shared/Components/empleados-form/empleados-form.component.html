@@ -1,0 +1,41 @@
+<div class="container border rounded mt-3" >
+    <form class="mt-3 mb-2" [formGroup]="formEmpleado" (ngSubmit)="onSave()">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" placeholder="Nombre del Empleado" formControlName="name" [class]="isValidForm('name')">
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" placeholder="Cedula de Ciudadania" formControlName="cc" [class]="isValidForm('cc')">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" placeholder="Telefono" formControlName="telephone" [class]="isValidForm('telephone')">
+            </div>
+            <div class="form-group col-md-6">
+                <input type="email" class="form-control" placeholder="Direccion de Correo" formControlName="email" [class]="isValidForm('email')">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" placeholder="Direccion de Residencia" formControlName="adress" [class]="isValidForm('adress')">
+            </div>
+            <div class="form-group col-md-6">
+                <input type="date" class="form-control" placeholder="Fecha de ingreso" formControlName="date" [class]="isValidForm('date')">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" placeholder="Contacto de Emergencia" formControlName="ce" [class]="isValidForm('ce')">
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" placeholder="Sueldo Asignado" formControlName="pay" [class]="isValidForm('pay')">
+            </div>
+        </div>
+        <hr class="mt-0">
+        <button type="submit" class="btn btn-outline-success btn-block mb-3">Guardar</button>
+    </form>
+</div>
+<div class="container">
+    <button class="btn btn-outline-secondary m-2 " (click)="goList()">Regresar a Lista</button>
+</div>

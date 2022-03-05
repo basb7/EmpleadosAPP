@@ -1,0 +1,37 @@
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre Empleado</th>
+                <th scope="col">Cedula de Ciudadania</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Direccion de correo</th>
+                <th scope="col">Direccion de residencia</th>
+                <th scope="col">Fecha de ingreso</th>
+                <th scope="col">Contacto de emergencia</th>
+                <th scope="col">Sueldo Asignado</th>
+                <th scope="col">Acciones</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let item of empleados$ | async">
+                <th scope="row">1</th>
+                <td>{{item.name}}</td>
+                <td>{{item.cc}}</td>
+                <td>{{item.telephone}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.adress}}</td>
+                <td>{{item.date}}</td>
+                <td>{{item.ce}}</td>
+                <td>${{item.pay}}</td>
+                <td>
+                    <div class="  d-sm-block" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-outline-success btn-sm m-1" (click)="onGet(item)">Ver</button>
+                    <button type="button" class="btn btn-outline-warning btn-sm m-1" (click)="onEdit(item)">Editar</button>
+                    <button type="button" class="btn btn-outline-danger btn-sm m-1" (click)="onDelete(item.id)">Eliminar</button>
+                </div></td> 
+            </tr>
+            </tbody>
+        </table>  
+    </div>

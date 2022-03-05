@@ -1,0 +1,26 @@
+<div class="container">
+    <form class="border rounded" [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="text-center col-md-12">
+            <h1 class="p-2">EmpleadosApp</h1>
+            <h5 class="p-2">Inicia Sesión</h5>
+        </div>
+        <div class="form-row justify-content-center">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" formControlName="email">
+          </div>
+        </div>
+        <div class="form-row justify-content-center">
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Password</label>
+              <input type="password" class="form-control" id="inputPassword4" formControlName="password">
+            </div>
+        </div>
+        <div class="form-row ">
+            <div class=" col text-center">
+                <button type="submit" class="btn btn-success col-md-4">Ingresar</button>
+            </div>
+        </div>
+            
+    </form>
+</div>

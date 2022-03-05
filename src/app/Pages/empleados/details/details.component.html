@@ -1,0 +1,40 @@
+<div class="card">
+    <div class="card-header">
+        Detalles del Empleado
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">
+                Nombre Empleado: <h5>{{valueEmpleado.name}}</h5>
+            </li>
+            <li class="list-group-item">
+                Cedula de Ciudadania: <h5>{{valueEmpleado.cc}}</h5>
+            </li>
+            <li class="list-group-item">
+                Telefono: <h5>{{valueEmpleado.telephone}}</h5>
+            </li>
+            <li class="list-group-item">
+                Direccion de correo: <h5>{{valueEmpleado.email}}</h5>
+            </li>
+            <li class="list-group-item">
+                Direccion de residencia: <h5>{{valueEmpleado.adress}}</h5>
+            </li>
+            <li class="list-group-item">
+                Fecha de ingreso: <h5>{{valueEmpleado.date}}</h5>
+            </li>
+            <li class="list-group-item">
+                Contacto de emergencia: <h5>{{valueEmpleado.ce}}</h5>
+            </li>
+            <li class="list-group-item">
+                Sueldo Asignado: <h5>$ {{valueEmpleado.pay}}</h5>
+            </li>
+        </ul>
+    </div>
+    <div class=" text-center">
+        <button class="btn btn-outline-warning m-2 " (click)="onEdit()">Editar</button>
+        <button class="btn btn-outline-danger m-2 " (click)="onDelete()">Eliminar</button>
+    </div>
+</div>
+<div>
+    <button class="btn btn-outline-secondary m-2 " (click)="goList()">Regresar a Lista</button>
+</div>

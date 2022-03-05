@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "crud-empleados-2bd57": {
+      "hosting": {
+        "EmpleadosApp": [
+          "crud-empleados-2bd57"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "crud-empleados-2bd57"
+  }
+}
